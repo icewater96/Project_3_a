@@ -2,7 +2,13 @@
 
 ## Learning algorithms
 
-This implementation uses Deep Reinforcement Learning approach. To be more specific, Multi-Agent Deep Deterministic Policy Gradient (MADDPG) is utilized to train an actor and critic network. The training process involves Experience Replay to break unwanted correlation in experiences. Target networks for the actor and critic are also implemented to increase stability of training. The target networks are updates every NUM_LEARN_STEPS_PER_ENV_STEP times by soft update method. 
+This implementation uses Deep Reinforcement Learning approach. To be more specific, Multi-Agent Deep Deterministic Policy Gradient (MADDPG) is utilized to train an actor and critic network. The training process involves Experience Replay to break unwanted correlation in experiences. Target networks for the actor and critic are also implemented to increase stability of training. 
+
+MADDPG fits in tasks with multi-agents tasks. Each agent has its own actor and critic networks. Each agent's actor is trained with its own obsevations while each agent's critic is trained using all agents' actions and observations. This setup allowes MADDPG to handle both collaborative and competitive tasks. The following is pseduocode of MADDPG
+
+![](1_sfPu94LSl9nSKkvGIx-msw.png)
+
+The target networks are updates every NUM_LEARN_STEPS_PER_ENV_STEP times by soft update method. 
 
 The actor network consist of 3 dense layers and the critic network consists of 3 dense layers as well. 
 
