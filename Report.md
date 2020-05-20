@@ -73,7 +73,7 @@ The average score over 100 consecutive episodes reached 0.9786 at 1810th Episode
 ## Plot of rewards
 This plot demonstrates the training process. The Y-Axis is average of reward over 100 episodes. As the training goes on, the average score over 100 episodes reached above 0.9 after episode 1780. 
 
-![](Figure_2020-05-20 015256.png)
+![](Figure_2020-05-20_015256.png)
 
 ## Future work
 This implement works fine but it takes a long time to train. I would like to try to optimize hyper-parameters to improve performance. 
