@@ -22,7 +22,7 @@ Other hyperparameters are listed below:
 - NUM_LEARN_STEPS_PER_ENV_STEP = 3
 
 ## Trainig 
-The average score over 100 consecutive episodes reached 30.0 at 824th Episode as following: 
+The average score over 100 consecutive episodes reached 0.9786 at 1810th Episode as following: 
 
 >Episode 1610, Average Score: 0.3547, Current Score:0.1000
 
