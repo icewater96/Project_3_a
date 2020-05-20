@@ -71,9 +71,9 @@ The average score over 100 consecutive episodes reached 0.9786 at 1810th Episode
 >Episode 1830, Average Score: 0.9624, Current Score:0.3000
 
 ## Plot of rewards
-This plot demonstrates the training process. The Y-Axis is average of reward over 100 episodes. As the training goes on, the average reward over 100 episode reached above 30.0. 
+This plot demonstrates the training process. The Y-Axis is average of reward over 100 episodes. As the training goes on, the average score over 100 episodes reached above 0.9 after episode 1780. 
 
-![](Figure_2020-05-08_001519.png)
+![](Figure 2020-05-20 015256.png)
 
 
 ## Future work
