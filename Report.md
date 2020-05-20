@@ -2,22 +2,24 @@
 
 ## Learning algorithms
 
-This implementation uses Deep Reinforcement Learning approach. To be more specific, Deep Deterministic Policy Gradient (DDPG) is utilized to train an actor and critic network. The training process involves Experience Replay to break unwanted correlation in experiences. Target networks for the actor and critic are also implemented to increase stability of training. The target networks are updates every UPDATE_EVERY times by soft update method. 
+This implementation uses Deep Reinforcement Learning approach. To be more specific, Multi-Agent Deep Deterministic Policy Gradient (MADDPG) is utilized to train an actor and critic network. The training process involves Experience Replay to break unwanted correlation in experiences. Target networks for the actor and critic are also implemented to increase stability of training. The target networks are updates every UPDATE_EVERY times by soft update method. 
 
-The actor network consist of 4 dense layers and the critic network consists of 4 dense layers as well. 
+The actor network consist of 3 dense layers and the critic network consists of 3 dense layers as well. 
 
 Other hyperparameters are listed below:
-- BUFFER_SIZE = int(1e6)  # replay buffer size
-- BATCH_SIZE = 128        # minibatch size
-- GAMMA = 0.95            # discount factor
+- BUFFER_SIZE = int(1e5)  # replay buffer size
+- BATCH_SIZE = 256        # minibatch size
+- GAMMA = 0.99            # discount factor
 - TAU = 1e-3              # for soft update of target parameters
 - LR_ACTOR = 1e-4         # learning rate of the actor 
-- LR_CRITIC = 1e-3        # learning rate of the critic
-- WEIGHT_DECAY = 0        # L2 weight decay
-- UPDATE_EVERY = 20 
-- UPDATE_TIMES = 10
-- EPSILON  = 1.0          # WEgiht added noise to control exploration 
-- EPSILON_DECAY = 1e-6    
+- LR_CRITIC = 3e-4        # learning rate of the critic
+- WEIGHT_DECAY_actor = 0.0 # L2 weight decay
+- WEIGHT_DECAY_critic = 0.0 # L2 weight decay
+- NOISE_START=1.0
+- NOISE_END=0.1
+- NOISE_REDUCTION=0.999
+- EPISODES_BEFORE_TRAINING = 300
+- NUM_LEARN_STEPS_PER_ENV_STEP = 3
 
 ## Trainig 
 The average score over 100 consecutive episodes reached 30.0 at 824th Episode as following: 
