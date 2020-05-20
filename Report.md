@@ -24,25 +24,29 @@ Other hyperparameters are listed below:
 ## Trainig 
 The average score over 100 consecutive episodes reached 30.0 at 824th Episode as following: 
 
-> Episode 820	Average Score: 29.75	
-
-> Episode 821	Average Score: 29.80	
-
-> Episode 822	Average Score: 29.86	
-
-> Episode 823	Average Score: 29.93	
-
-> Episode 824	Average Score: 30.00	
-
-> Episode 825	Average Score: 29.99	
-
-> Episode 826	Average Score: 30.06	
-
-> Episode 827	Average Score: 30.15	
-
-> Episode 828	Average Score: 30.31	
-
-> Episode 829	Average Score: 30.31	
+>Episode 1610, Average Score: 0.3547, Current Score:0.1000
+>Episode 1620, Average Score: 0.3588, Current Score:0.5000
+>Episode 1630, Average Score: 0.4068, Current Score:0.6000
+>Episode 1640, Average Score: 0.3719, Current Score:0.2000
+>Episode 1650, Average Score: 0.4289, Current Score:0.1000
+>Episode 1660, Average Score: 0.4559, Current Score:0.8000
+>Episode 1670, Average Score: 0.4869, Current Score:0.3000
+>Episode 1680, Average Score: 0.5039, Current Score:0.1000
+>Episode 1690, Average Score: 0.5819, Current Score:0.2000
+>Episode 1700, Average Score: 0.6259, Current Score:0.1000
+>Episode 1710, Average Score: 0.6610, Current Score:0.1000
+>Episode 1720, Average Score: 0.7380, Current Score:2.5000
+>Episode 1730, Average Score: 0.7200, Current Score:0.1000
+>Episode 1740, Average Score: 0.8120, Current Score:0.3000
+>Episode 1750, Average Score: 0.8350, Current Score:0.9000
+>Episode 1760, Average Score: 0.8550, Current Score:0.2000
+>Episode 1770, Average Score: 0.8929, Current Score:0.1000
+>Episode 1780, Average Score: 0.9179, Current Score:0.1000
+>Episode 1790, Average Score: 0.8739, Current Score:2.4000
+>Episode 1800, Average Score: 0.9016, Current Score:2.6000
+>Episode 1810, Average Score: 0.9786, Current Score:1.0000
+>Episode 1820, Average Score: 0.9386, Current Score:0.0000
+>Episode 1830, Average Score: 0.9624, Current Score:0.3000
 
 ## Plot of rewards
 This plot demonstrates the training process. The Y-Axis is average of reward over 100 episodes. As the training goes on, the average reward over 100 episode reached above 30.0. 
