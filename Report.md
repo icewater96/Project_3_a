@@ -4,14 +4,13 @@
 
 This implementation uses Deep Reinforcement Learning approach. To be more specific, Multi-Agent Deep Deterministic Policy Gradient (MADDPG) is utilized to train an actor and critic network. The training process involves Experience Replay to break unwanted correlation in experiences. Target networks for the actor and critic are also implemented to increase stability of training. 
 
-MADDPG fits in tasks with multi-agents tasks. Each agent has its own actor and critic networks. Each agent's actor is trained with its own obsevations while each agent's critic is trained using all agents' actions and observations. This setup allowes MADDPG to handle both collaborative and competitive tasks. The following is pseduocode of MADDPG
+MADDPG fits in tasks with multi-agents tasks. Each agent has its own actor and critic networks. Each agent's actor is trained with its own observations while each agent's critic is trained using all agents' actions and observations. This setup allows MADDPG to handle both collaborative and competitive tasks. The following is the pseudo code of MADDPG
 
 ![](1_sfPu94LSl9nSKkvGIx-msw.png)
 
+
 The target networks are updates every NUM_LEARN_STEPS_PER_ENV_STEP times by soft update method. 
-
 The actor network consist of 3 dense layers and the critic network consists of 3 dense layers as well. 
-
 Other hyperparameters are listed below:
 - BUFFER_SIZE = int(1e5)  # replay buffer size
 - BATCH_SIZE = 256        # minibatch size
@@ -82,4 +81,6 @@ This plot demonstrates the training process. The Y-Axis is average of reward ove
 ![](Figure_2020-05-20_015256.png)
 
 ## Future work
-This implement works fine but it takes a long time to train. I would like to try to optimize hyper-parameters to improve performance. 
+This implementation works fine but it takes a long time to train., especially after the average score is greater than 0.5 I would like to optimize hyper-parameters to improve performance. Meanwhile, the neural networks of the actors and critics may be a overkill. I would like to reduce network size to see if the training can be faster without compromising performance much. 
+
+The success of extending DDPG into MADDPG demonstrates effectiveness of multi-agents setup and I would like to try MAPPO (Multi Agent Proximal Policy Optimization) for curiosity. 
